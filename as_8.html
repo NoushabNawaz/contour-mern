@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+function getmonth(month) {
+    let month_list = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    if (!month_list.includes(month)) {
+        throw new Error("Invalid month entered");
+    }
+    console.log("The entered month is valid");
+}
+
+let input_month = prompt("Enter a month (e.g. Jan, Feb, Mar): ");
+
+try {
+    getmonth(input_month);
+} catch (error) {
+    console.error(error.message);
+}
+
+
+
+    </script>
+</body>
+</html>
